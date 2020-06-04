@@ -1,0 +1,35 @@
+<!--pages/blog/blog.wxml-->
+<view class="containre">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bind:tap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container">
+      <k-search iconfont="iconfont" icon-sousuo="icon-sousuo" 
+      bind:search="onSearch" bind:search="onSearch" />
+    </view>
+  </view>
+  <!-- 博客卡片列表 -->
+  <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel">
+        <k-blog-card blog="{{item}}" data-blogid="{{item._id}}" bind:tap="goComment"/>
+         <!-- 评论栏  -->
+        <k-blog-ctrl
+          blogId="{{item._id}}"
+          blog="{{item}}"
+          iconfont="iconfont"
+          icon-pinglun="icon-pinglun"
+          icon-fenxiang="icon-fenxiang"
+         />
+      </view>
+    </block>
+  </view>
+  <!-- 底部弹框 -->
+  <k-login modalShow="{{modalShow}}" 
+  bind:loginSuccess="onLoginSuccess"
+  bind:loginFail="onLoginFail">
+  </k-login>
+  <!-- <k-bottom-modal/> -->
+</view>

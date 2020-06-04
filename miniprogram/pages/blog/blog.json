@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "k-search" : "/components/search/search",
+    "k-login" : "/components/login/login",
+    "k-blog-card" : "/components/blog-card/blog-card"
+  },
+  "navigationBarTitleText": "发现",
+  "enablePullDownRefresh": true
+}

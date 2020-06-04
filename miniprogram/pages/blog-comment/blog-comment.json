@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "k-blog-card" : "/components/blog-card/blog-card"
+  },
+  "navigationBarTitleText": "正文"
+}

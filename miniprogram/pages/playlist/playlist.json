@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "k-playlist": "/components/playlist/playlist"
+  },
+  "enablePullDownRefresh": true
+}

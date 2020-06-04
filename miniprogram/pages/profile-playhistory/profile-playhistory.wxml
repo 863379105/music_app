@@ -1,0 +1,2 @@
+<!--pages/profile-playhistory/profile-playhistory.wxml-->
+<k-musiclist musiclist="{{musicListHistory}}"/>

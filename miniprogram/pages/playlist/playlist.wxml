@@ -1,0 +1,13 @@
+<swiper indicator-dots="ture" autoplay="ture">
+  <block wx:for="{{swiperImgUrls}}" wx:key="url">
+    <swiper-item>
+      <image src="{{item.url}}" mode="widthFix" class="img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="playlist-container">
+  <block wx:for="{{playlist}}" wx:key="_id">
+    <k-playlist playlist="{{item}}"></k-playlist>
+  </block>
+</view>
